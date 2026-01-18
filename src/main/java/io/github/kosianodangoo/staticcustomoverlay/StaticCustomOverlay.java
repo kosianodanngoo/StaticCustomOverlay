@@ -50,7 +50,7 @@ public class StaticCustomOverlay {
     }
 
     @SubscribeEvent
-    public static void onRenderGUI(RenderGuiOverlayEvent.Post event) {
+    public static void onRenderGUI(RenderGuiOverlayEvent.Pre event) {
         for(ResourceLocation texture : Config.textures) {
             renderTextureOverlay(event.getGuiGraphics(), texture);
         }
